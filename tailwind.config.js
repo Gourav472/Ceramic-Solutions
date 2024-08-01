@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         jakarta: "Plus Jakarta Sans, sans-serif",
-        Manrope: "Manrope, sans-serif",
+        manrope: "Manrope, sans-serif",
       },
       container: {
         center: true,
