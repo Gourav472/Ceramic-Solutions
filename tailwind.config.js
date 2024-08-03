@@ -12,9 +12,9 @@ module.exports = {
       container: {
         center: true,
         screens: {
-          sm: "580px",
-          md: "800px",
-          lg: "1000px",
+          sm: "576px",
+          md: "768px",
+          lg: "922px",
           xl: "1180px",
         },
         padding: {
@@ -29,6 +29,7 @@ module.exports = {
         '2xl': "1400px",
       },
       colors: {
+        primary: "#5757571A",
         red: "#FF0000",
         offRed: "#FF0000BF",
         gray: "#14141426",
@@ -46,6 +47,9 @@ module.exports = {
       },
       backgroundImage: {
         'hero_bg': 'url(./assets/images/webp/hero_bg.webp)',
+      },
+      boxShadow: {
+        gray:' 0px 2px 44px 3px #5757571A',
       }
     },
   },
