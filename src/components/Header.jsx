@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NAV_ITEMS_DATA } from '../common/Helper';
 import ceramicLogo from '../assets/images/svg/ceramic-logo.svg'
+import Icon from '../common/Icons';
 const Header = () => {
   const [show, setShow] = useState(true);
   useEffect(() => {
@@ -32,12 +33,11 @@ const Header = () => {
   };
   return (
     <>
-      <div className={`bg-header_bg pt-6 relative bg-no-repeat bg-cover min-h-screen ${!show ? "min-h-screen" : ""}`}>
-        <div className='container max-w-[1164px] '>
+      <div className={`${!show ? "min-h-screen" : ""}`}>
           <div className="flex justify-between items-center bg-white p-4 rounded-3xl ">
             <a href="/"><img src={ceramicLogo} alt="logo" /></a>
             <ul
-              className={`flex flex-col lg:flex-row items-center gap-[20px] lg:gap-[28px] max-lg:fixed max-lg:justify-center custom_duration top-0 max-lg:-right-full max-lg:bg-black max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
+              className={`flex flex-col lg:flex-row items-center gap-[20px] lg:gap-[28px] max-lg:fixed max-lg:justify-center custom_duration top-0 max-lg:-right-full max-lg:bg-white max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
                 }`}
             >
               {NAV_ITEMS_DATA.map((item, index) => (
@@ -51,12 +51,11 @@ const Header = () => {
                   </a>
                 </li>
               ))}
-            
             </ul>
             <div className="flex items-center sm:gap-6 gap-3">
-           <button className=''></button>
+              <button className=' max-md:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] hover:shadow-[0px_0px_15px_0px_#FFFFFF_inset] custom_duration hover:scale-95'><span><Icon iconName="Phone"/></span>(865) 621-1717</button>
               <div
-                className={`cursor-pointer relative z-[100] lg:hidden max-sm:scale-75 ${show ? "" : "cross" }`}
+                className={`cursor-pointer relative z-[100] lg:hidden max-sm:scale-75 ${show ? "" : "cross"}`}
                 onClick={() => setShow(!show)}>
                 <span className="nav-toggle-items "></span>
                 <span className="nav-toggle-items my-2"></span>
@@ -64,7 +63,8 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+          <div>
+          </div>
       </div>
     </>
   )
