@@ -35,6 +35,7 @@ module.exports = {
         offBlack: "#0000001F",
         lightPink: "#FFEBEB",
         offPink: "#B400011A",
+        lightGray: "#B6B6B640",
       },
       backgroundSize: {
         "full": "100% 100%",
