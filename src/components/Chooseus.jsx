@@ -1,6 +1,5 @@
 import React from 'react'
 import CommonHeading from '../common/CommonHeading'
-import { StarIcon } from '../common/Icons'
 
 const Chooseus = () => {
   return (
@@ -13,7 +12,7 @@ const Chooseus = () => {
                 Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. 
                 </p>
                 <div className='flex gap-5'>
-                  <a href="/"><StarIcon/></a>
+                  
                   <div>
                     <p className='max-w-[210px] text-black font-semibold text-xl leading-8 font-jakarta'>
                     High Quality Materials
