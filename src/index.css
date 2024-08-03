@@ -7,11 +7,11 @@
 
 @layer components {
     .navitems {
-        @apply leading-6 font-normal text-base custom_duration text-black;
+        @apply font-jakarta font-normal text-base leading-6 text-black;
     }
 
     .nav-toggle-items {
-        @apply w-10 h-1 rounded-xl bg-black block duration-300 ease-linear;
+        @apply w-10 h-1 rounded-xl bg-black block custom_duration;
     }
 }
 

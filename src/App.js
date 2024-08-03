@@ -6,8 +6,8 @@ import Choose from './components/Choose';
 function App() {
   return (
     <>
-      <Header />
-      <Blog />
+      {/* <Header />
+      <Blog /> */}
     <Choose/>
     </>
   );

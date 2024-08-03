@@ -35,6 +35,7 @@ module.exports = {
         offBlack: "#0000001F",
         lightPink: "#FFEBEB",
         offPink: "#B400011A",
+        lightGray: "#B6B6B640",
       },
       backgroundSize: {
         "full": "100% 100%",
@@ -42,6 +43,9 @@ module.exports = {
       fontSize: {
         "custom-3xl": "56px",
         "custom-4xl": "64px",
+      },
+      backgroundImage: {
+        'header_bg': 'url(./assets/images/webp/hero_bg.webp)',
       }
     },
   },
