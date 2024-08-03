@@ -5,28 +5,28 @@ export const NAV_ITEMS_DATA = [
         className: "navitems",
     },
     {
-        href: "#About",
-        text: "About Us",
+        href: "#about",
+        text: "About",
         className: "navitems",
     },
     {
-        href: "#Portfolio",
-        text: "Portfolio",
-        className: "navitems",
-    },
-    {
-        href: "#Services",
+        href: "#services",
         text: "Services",
         className: "navitems",
     },
     {
-        href: "#Testimonial",
-        text: "Testimonial",
+        href: "#portfolio",
+        text: "Portfolio",
         className: "navitems",
     },
     {
-        href: "#Contact",
-        text: "Contact Us",
+        href: "#contact",
+        text: "Contact us",
+        className: "navitems",
+    },
+    {
+        href: "#request",
+        text: "Request a Qoute",
         className: "navitems",
     },
 ];

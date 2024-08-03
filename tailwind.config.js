@@ -42,6 +42,9 @@ module.exports = {
       fontSize: {
         "custom-3xl": "56px",
         "custom-4xl": "64px",
+      },
+      backgroundImage: {
+        'header_bg': 'url(./assets/images/webp/hero_bg.webp)',
       }
     },
   },
