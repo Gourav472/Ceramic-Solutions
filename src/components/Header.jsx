@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { NAV_ITEMS_DATA } from '../common/Helper';
-import { CeramicLogo } from '../common/Icons';
 const Header = () => {
   const [show, setShow] = useState(true);
   useEffect(() => {
@@ -35,7 +34,7 @@ const Header = () => {
       <div className={`bg-header_bg relative bg-no-repeat bg-cover ${!show ? "min-h-screen" : ""}`}>
         <div className='container max-w-[1164px] relative z-20 '>
           <div className="flex justify-between items-center pt-[6px] pb-2">
-            <a href="/"><CeramicLogo/></a>
+            
             <ul
               className={`flex flex-col lg:flex-row items-center gap-[20px] lg:gap-[32px] max-lg:fixed max-lg:justify-center custom_duration top-0 max-lg:-right-full max-lg:bg-black max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
                 }`}
