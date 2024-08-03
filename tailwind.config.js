@@ -33,6 +33,7 @@ module.exports = {
         red: "#FF0000",
         offRed: "#FF0000BF",
         gray: "#14141426",
+        lightBlack: "#141414",
         offBlack: "#0000001F",
         lightBlack: "#141414",
         lightPink: "#FFEBEB",
