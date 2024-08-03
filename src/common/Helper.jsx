@@ -68,3 +68,32 @@ export const WHAT_DO_CARDS = [
         heading: "Fireplace Tiling",
     },
 ]
+
+export const ACCORDION_DATA = [
+    {
+        title: 'Lörem ipsum koda astrobel: sutaveligen.',
+        content: '1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.',
+    },
+    {
+        title: 'Rodod bänera viliga',
+        content: '1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.',
+    },
+    {
+        title: 'Pregigt primasofi dede facebooka: förutom',
+        content: '1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.',
+    },
+    {
+        title: 'Ipsum koda astrobel: sutaveligen. Rodod bänera viliga.',
+        content: '1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.',
+    },
+    {
+        title: 'Rodod bänera viliga. Pregigt primasofi dede facebooka',
+        content: '1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.',
+    },
+];
+
+export const LOCATION_MARK = [
+    { name: "Knoxville" },
+    { name: "Sevierville" },
+    { name: "Maynardville" },
+]

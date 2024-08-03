@@ -29,6 +29,7 @@ module.exports = {
         '2xl': "1400px",
       },
       colors: {
+        primary: "#5757571A",
         red: "#FF0000",
         offRed: "#FF0000BF",
         gray: "#14141426",
@@ -51,8 +52,9 @@ module.exports = {
       },
       boxShadow: {
         "3xl": "0px 0px 12px 3px #B6B6B640",
+        '4xl': ' 0px 2px 44px 3px #5757571A',
       },
-    },
+    }
   },
   plugins: [],
 }
