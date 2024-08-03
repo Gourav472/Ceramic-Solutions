@@ -1,12 +1,12 @@
 import './App.css';
 import Blog from './components/Blog';
-import Header from './components/Header';
 import Choose from './components/Choose';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <>
-      <Header />
+      <Hero />
       {/* <Blog />
       <Choose /> */}
     </>

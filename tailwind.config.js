@@ -12,9 +12,9 @@ module.exports = {
       container: {
         center: true,
         screens: {
-          sm: "540px",
-          md: "720px",
-          lg: "960px",
+          sm: "580px",
+          md: "800px",
+          lg: "1000px",
           xl: "1180px",
         },
         padding: {
@@ -45,7 +45,7 @@ module.exports = {
         "custom-4xl": "64px",
       },
       backgroundImage: {
-        'header_bg': 'url(./assets/images/webp/hero_bg.webp)',
+        'hero_bg': 'url(./assets/images/webp/hero_bg.webp)',
       }
     },
   },
