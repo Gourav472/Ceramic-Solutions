@@ -1,7 +1,7 @@
 import React from 'react'
 import CommonHeading from '../common/CommonHeading'
 
-const Chooseus = () => {
+const Choose = () => {
   return (
     <div className='bg-lightPink py-[100px]'>
       <div className="container ">
@@ -29,4 +29,4 @@ const Chooseus = () => {
   )
 }
 
-export default Chooseus
+export default Choose

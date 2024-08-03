@@ -1,11 +1,10 @@
 import './App.css';
-import Header from './components/Header';
-import Chooseus from './components/Chooseus';
+import Choose from './components/Choose';
 
 function App() {
   return (
     <>
-    <Chooseus/>
+    <Choose/>
     </>
   );
 }
