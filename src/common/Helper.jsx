@@ -30,3 +30,9 @@ export const NAV_ITEMS_DATA = [
         className: "navitems",
     },
 ];
+
+export const BLOG_DATA = [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+]

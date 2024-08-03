@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Blog />
-      <Choose /> */}
+      <Blog />
+      <Choose />
     </>
   );
 }
