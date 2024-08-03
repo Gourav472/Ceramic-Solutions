@@ -12,13 +12,13 @@ module.exports = {
       container: {
         center: true,
         screens: {
-          sm: "580px",
-          md: "800px",
-          lg: "1000px",
-          xl: "1180px",
+          sm: "640px",
+          md: "768px",
+          lg: "992px",
+          xl: "1184px",
         },
         padding: {
-          DEFAULT: "20px",
+          DEFAULT: "24px",
         }
       },
       screens: {
@@ -33,6 +33,7 @@ module.exports = {
         offRed: "#FF0000BF",
         gray: "#14141426",
         offBlack: "#0000001F",
+        lightBlack: "#141414",
         lightPink: "#FFEBEB",
         offPink: "#B400011A",
         lightGray: "#B6B6B640",
@@ -41,12 +42,16 @@ module.exports = {
         "full": "100% 100%",
       },
       fontSize: {
+        "custom-2xl": "32px",
         "custom-3xl": "56px",
         "custom-4xl": "64px",
       },
       backgroundImage: {
         'hero_bg': 'url(./assets/images/webp/hero_bg.webp)',
-      }
+      },
+      boxShadow: {
+        "3xl": "0px 0px 12px 3px #B6B6B640",
+      },
     },
   },
   plugins: [],

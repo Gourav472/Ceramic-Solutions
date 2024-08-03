@@ -11,7 +11,7 @@
     }
 
     .nav-toggle-items {
-        @apply w-10 h-1 rounded-xl bg-black block custom_duration;
+        @apply w-4 h-[2px] rounded-xl bg-white block custom_duration;
     }
 }
 
