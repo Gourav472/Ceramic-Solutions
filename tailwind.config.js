@@ -12,10 +12,10 @@ module.exports = {
       container: {
         center: true,
         screens: {
-          sm: "580px",
-          md: "800px",
-          lg: "1000px",
-          xl: "1180px",
+          sm: "640px",
+          md: "768px",
+          lg: "992px",
+          xl: "1184px",
         },
         padding: {
           DEFAULT: "20px",
@@ -32,6 +32,7 @@ module.exports = {
         red: "#FF0000",
         offRed: "#FF0000BF",
         gray: "#14141426",
+        lightBlack: "#141414",
         offBlack: "#0000001F",
         lightPink: "#FFEBEB",
         offPink: "#B400011A",
@@ -41,6 +42,7 @@ module.exports = {
         "full": "100% 100%",
       },
       fontSize: {
+        "custom-2xl": "32px",
         "custom-3xl": "56px",
         "custom-4xl": "64px",
       },
