@@ -35,7 +35,7 @@ const Header = () => {
     <>
       <div className={`${!show ? "min-h-screen" : ""}`}>
         <div className="flex justify-between items-center bg-white p-[14px_22px_14px_14px] lg:p-4 rounded-3xl ">
-          <a className=' max-sm:max-w-[97px]' href="/"><img src={ceramicLogo} alt="logo" /></a>
+          <a className='max-sm:max-w-[97px]' href="/"><img src={ceramicLogo} alt="logo" /></a>
           <ul
             className={`flex flex-col lg:flex-row items-center gap-[20px] lg:gap-[28px] max-lg:fixed max-lg:justify-center custom_duration top-0 max-lg:-right-full max-lg:bg-white max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
               }`}
@@ -55,7 +55,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="flex items-center sm:gap-6 gap-3">
-            <button className=' max-lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] hover:shadow-[0px_0px_15px_0px_#FFFFFF_inset] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</button>
+            <button className='max-lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] hover:shadow-[0px_0px_15px_0px_#FFFFFF_inset] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</button>
             <div
               className={`cursor-pointer relative z-[100] lg:hidden ${show ? "" : "cross"}`}
               onClick={() => setShow(!show)}>

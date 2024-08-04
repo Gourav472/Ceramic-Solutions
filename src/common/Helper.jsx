@@ -5,7 +5,6 @@ import tiling from '../assets/images/webp/tiling.webp'
 import wall from '../assets/images/webp/wall.webp'
 import adaShower from '../assets/images/webp/ada_shower.webp'
 import fireplace from '../assets/images/webp/fireplace.webp'
-
 export const NAV_ITEMS_DATA = [
     {
         href: "#",
@@ -67,8 +66,30 @@ export const WHAT_DO_CARDS = [
         image: fireplace,
         heading: "Fireplace Tiling",
     },
-]
+];
+export const WHAT_CARDS_SLIDER = [
+    {
+        image: kitchen,
+        heading: "Kitchen Backsplash",
+    },
+    {
+        image: showers,
+        heading: "Custom Showers",
+    },
+    {
+        image: floor,
+        heading: "Custom Flooring",
+    },
+    {
+        image: tiling,
+        heading: "Large Format Tiling",
+    },
+    {
+        image: wall,
+        heading: "Wall Tiling",
+    },
 
+];
 export const ACCORDION_DATA = [
     {
         title: 'Lörem ipsum koda astrobel: sutaveligen.',
@@ -91,9 +112,8 @@ export const ACCORDION_DATA = [
         content: '1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.',
     },
 ];
-
 export const LOCATION_MARK = [
     { name: "Knoxville" },
     { name: "Sevierville" },
     { name: "Maynardville" },
-]
+];
