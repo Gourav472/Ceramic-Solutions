@@ -21,7 +21,7 @@ const Faq = () => {
             <div key={index} className="w-full flex mx-auto max-w-[912px] mt-6 justify-center relative duration-500 ease-linear" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="accordion w-full">
                 <div
-                  className="duration-700 ease-linear accordion-header relative z-[1] px-5 flex items-center justify-between rounded-2xl bg-white shadow-gray gap-1.5 cursor-pointer p-5"
+                  className="duration-700 ease-linear accordion-header relative z-[1] px-5 flex items-center justify-between rounded-2xl bg-white shadow-4xl gap-1.5 cursor-pointer p-5"
                   onClick={() => handleToggle(index)}
                   aria-expanded={openIndex === index}
                 >
