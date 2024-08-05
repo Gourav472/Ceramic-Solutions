@@ -76,14 +76,14 @@ const Customers = () => {
     ],
   };
   return (
-    <div className='lg:pt-[140px] lg:pb-[124px] md:pt-24 pt-20 md:pb-24px pb-[70px]'>
+    <div className='lg:pt-[140px] md:pt-24 pt-20'>
       <div className='container'>
         <div className='flex flex-col justify-center items-center'>
           <CommonHeading HeadingName="What Our Customers Say" HeadingClass="sm:max-w-[674px] max-w-[300px] text-center" />
           <p className="max-w-[641px] font-jakarta font-normal sm:text-lg text-sm sm:leading-7 leading-5 text-center sm:pt-5 pt-4 pb-8 text-black">
             Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade
           </p>
-          <div className='flex sm:flex-row flex-col gap-6 sm:pb-12 pb-5'>
+          <div className='flex sm:flex-row flex-col gap-6'>
             <div className="flex items-center w-[229px] h-20 gap-3 border-[0.83px] border-gray py-2 px-4 rounded-2xl">
               <Icon iconName='ReviewGoogle' />
               <div>
