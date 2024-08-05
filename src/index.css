@@ -31,3 +31,24 @@
 .custom_duration {
     transition: all 300ms linear !important;
 }
+
+.customer_slider .slick-slide >div {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .customer_slider .slick-track .slick-slide {
+    margin: 0 12px !important;
+  }
+  .customer_slider .slick-track {
+    display: flex !important;
+  }
+  @media (max-width: 768px) {
+    .customer_slider .slick-slide >div {
+      display: flex !important;
+      justify-content: center !important;
+    }
+    .customer_slider .slick-track {
+        display: flex !important;
+      }
+  }
+ 
