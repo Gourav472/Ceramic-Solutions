@@ -51,11 +51,11 @@ const Header = () => {
                 </a>
               </li>
             ))}
-            <li><button className='lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] hover:shadow-[0px_0px_15px_0px_#FFFFFF_inset] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</button>
+            <li><button className='lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</button>
             </li>
           </ul>
           <div className="flex items-center sm:gap-6 gap-3">
-            <button className='max-lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] hover:shadow-[0px_0px_15px_0px_#FFFFFF_inset] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</button>
+            <button className='max-lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] bg-red p-[14px_20px] rounded-[56px] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</button>
             <div
               className={`cursor-pointer relative z-[100] lg:hidden ${show ? "" : "cross"}`}
               onClick={() => setShow(!show)}>

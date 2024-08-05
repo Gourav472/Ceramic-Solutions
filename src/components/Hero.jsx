@@ -15,7 +15,7 @@ const Hero = () => {
                     <p className='max-w-[742px] text-white font-jakarta font-normal text-base lg:text-[18px] leading-[25px] lg:leading-7 pt-4 md:pt-5'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade nyheter eurosamma sol: teroktig,</p>
                 </div>
                 <div className='pt-7 md:pt-9'>
-                    <CommonBtn ButtonName="Get a Quote" ButtonClass="bg-red text-white hover:" />
+                    <CommonBtn ButtonName="Get a Quote" ButtonClass="bg-red max-lg:px-8 text-white hover:" />
                 </div>
                 <div className='flex flex-wrap items-center gap-6 pt-[64px]'>
                     <div className='bg-white rounded-2xl border-[0.83px] flex items-center gap-[10px] p-[8px_45px_6px_16px] border-gray max-w-[229px] w-full min-h-[80px]'>
