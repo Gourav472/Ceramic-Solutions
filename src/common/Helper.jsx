@@ -117,3 +117,58 @@ export const LOCATION_MARK = [
     { name: "Sevierville" },
     { name: "Maynardville" },
 ];
+export const FOOTER_DATA = [
+    {
+        heading: "links", link: [
+            { id: "1", heading_text: "Home" },
+            { id: "1", heading_text: "about us" },
+            { id: "1", heading_text: "Services" },
+            { id: "1", heading_text: "Showcase" },
+        ]
+    },
+    {
+        heading: "legal", link: [
+            { id: "1", heading_text: "terms of use" },
+            { id: "1", heading_text: "privacy policy" },
+            { id: "1", heading_text: "cookie policy" },
+        ]
+    },
+    {
+        heading: "product", link: [
+            { id: "1", heading_text: "take tour" },
+            { id: "1", heading_text: "live chat" },
+            { id: "1", heading_text: "reveiws" },
+        ]
+    },
+];
+export const FOOTER_HEADING = [
+    {
+        heading: "legal", link: [
+            { id: "1", heading_text: "terms of use" },
+            { id: "1", heading_text: "privacy policy" },
+            { id: "1", heading_text: "cookie policy" },
+        ]
+    },
+    {
+        heading: "product", link: [
+            { id: "1", heading_text: "take tour" },
+            { id: "1", heading_text: "live chat" },
+            { id: "1", heading_text: "reveiws" },
+        ]
+    },
+    {
+        heading: "links", link: [
+            { id: "1", heading_text: "Home" },
+            { id: "1", heading_text: "about us" },
+            { id: "1", heading_text: "Services" },
+            { id: "1", heading_text: "Showcase" },
+        ]
+    },
+];
+
+export const SOCIAL_ICONS = [
+    { icon: "FaceBook" },
+    { icon: "Instagram_Red" },
+    { icon: "Twitter" },
+    { icon: "Linkedin" },
+]

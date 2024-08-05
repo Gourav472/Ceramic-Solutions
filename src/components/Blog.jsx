@@ -1,44 +1,95 @@
-import React from 'react'
+import React from 'react';
 import CommonHeading from '../common/CommonHeading';
 import kitchen from "../assets/images/webp/kitchen.png";
 import Icon from '../common/Icons';
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+const BlogCard = ({ imgSrc, title, link }) => (
+    <div className="p-6 shadow-[0px_0px_12px_3px_lightGray] w-full h-full rounded-3xl">
+        <img src={imgSrc} alt="Blog" className='w-full' />
+        <p className='xl:mt-6 mt-3 font-jakarta font-semibold text-lg xl:text-2xl xl:leading-[38px] text-black'>
+            {title}
+        </p>
+        <a href={link} className='flex items-center gap-2.5 mt-3 xl:mt-6'>
+            <p className='font-jakarta font-semibold text-base text-red'>
+                Learn more
+            </p>
+            <Icon iconName="RightArrow" className="mt-0.5" />
+        </a>
+    </div>
+);
 const Blog = () => {
     const repeatCount = 3;
-
     const ENTRIES = Array.from({ length: repeatCount }, (_, index) => ({
-        id: index + 1
+        id: index + 1,
+        imgSrc: kitchen,
+        title: 'Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.',
+        link: "#blog"
     }));
+    const SliderSettings = {
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 2000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        appendDots: dots => (
+            <div style={{
+                display: "flex", justifyContent: "center", position: "absolute", bottom: "-11px", alignItems: "center"
+            }}>
+                <ul style={{ margin: "0px" }}> {dots} </ul>
+            </div>
+        ),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
     return (
-        <div className='pt-1 pb-14' id='blog'>
+        <div className='xl:pt-[140px] pt-20 sm:pt-24 md:pt-28 pb-14' id='blog'>
             <div className="container">
                 <div className="flex flex-col items-center">
                     <CommonHeading HeadingClass="" HeadingName="Our Blog" />
-                    <p className='max-w-[592px] font-jakarta text-center font-normal text-lg text-black mt-5'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade</p>
+                    <p className='max-w-[592px] font-jakarta text-center font-normal text-lg text-black mt-5'>
+                        Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade
+                    </p>
                 </div>
                 <div className="lg:flex lg:justify-center lg:mt-14 mt-8">
                     <div className="lg:flex flex-row w-full -mx-3 hidden">
-                        {ENTRIES.map((item) => (
-                            <div key={item.id} className="w-4/12 px-3 mb-6">
-                                <div className="p-6 shadow-[0px_0px_12px_3px_lightGray] w-full h-full rounded-3xl">
-                                    <img src={kitchen} alt="kitchen" className='w-full' />
-                                    <p className='xl:mt-6 mt-3 font-jakarta font-semibold text-lg xl:text-2xl xl:leading-[38px] text-black'>
-                                        Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.
-                                    </p>
-                                    <a href="#blog" className='flex items-center gap-2.5 mt-3 xl:mt-6'>
-                                        <p className='font-jakarta font-semibold text-base text-red'>
-                                            Learn more
-                                        </p>
-                                        <Icon iconName="RightArrow" className="mt-0.5" />
-                                    </a>
-                                </div>
+                        {ENTRIES.map(entry => (
+                            <div key={entry.id} className="w-4/12 px-3 mb-6">
+                                <BlogCard {...entry} />
                             </div>
                         ))}
+                    </div>
+                    <div className="lg:hidden we_do_slider">
+                        <Slider {...SliderSettings}>
+                            {ENTRIES.map(entry => (
+                                <div key={entry.id} className="w-full">
+                                    <BlogCard {...entry} />
+                                </div>
+                            ))}
+                        </Slider>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Blog
+export default Blog;

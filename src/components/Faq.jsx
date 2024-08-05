@@ -5,7 +5,6 @@ import Icon from '../common/Icons';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -21,7 +20,7 @@ const Faq = () => {
             <div key={index} className="w-full flex mx-auto max-w-[912px] mt-6 justify-center relative duration-500 ease-linear" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="accordion w-full">
                 <div
-                  className="duration-700 ease-linear accordion-header relative z-[1] px-5 flex items-center justify-between rounded-2xl bg-white shadow-gray gap-1.5 cursor-pointer p-5"
+                  className="duration-700 ease-linear accordion-header relative z-[1] px-5 flex items-center justify-between rounded-2xl bg-white shadow-4xl gap-1.5 cursor-pointer p-5"
                   onClick={() => handleToggle(index)}
                   aria-expanded={openIndex === index}
                 >
@@ -32,7 +31,7 @@ const Faq = () => {
                 </div>
                 <div className=" overflow-hidden relative">
                   <div
-                    className={`accordion-content flex items-start gap-3 pl-5 pb-[15.2px] max-w-[759px] w-full duration-500 ease-linear ${openIndex === index ? ' relative top-5' : '-translate-y-full -top-24 absolute'}`}
+                    className={`accordion-content flex items-start gap-3 pl-5 pb-[15.2px] max-w-[759px] w-full duration-300 ease-linear ${openIndex === index ? ' relative top-5' : '-translate-y-full -top-24 absolute'}`}
                   >
                     <p className='text-black font-jakarta text-base font-normal opacity-70'>{item.content}</p>
                   </div>
