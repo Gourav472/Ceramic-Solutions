@@ -6,10 +6,10 @@ import CommonBtn from '../common/CommonBtn'
 const ItWork = () => {
     return (
         <div className='lg:pb-[140px] md:pb-24 pb-20 container'>
-            <div className="flex lg:flex-row flex-col xl:gap-[63px] max-lg:items-center gap-10">
+            <div className="flex max-lg:flex-col xl:gap-[63px] max-xl:items-center items-start lg:gap-10 gap-14">
                 <div className='xl:max-w-[485px] lg:order-1 order-2 lg:max-w-[460px] max-w-[400px] max-lg:mx-auto w-full sm:flex hidden lg:justify-end justify-center relative lg:pb-0 pb-14'>
-                    <img className='xl:max-w-[435px] lg:max-w-[400px] max-w-[280px] z-10 w-full lg:min-h-[581px] min-h-[270px]' src={itWorkImg} alt="#" />
-                    <div className='lg:max-w-[300px] max-w-[250px] w-full lg:min-h-[396px] min-h-[270px] absolute lg:left-0 left-[0%] xl:bottom-[9%] lg:bottom-[12%] bottom-[0%] rounded-3xl bg-red'></div>
+                    <img className='xl:max-w-[435px] lg:max-w-[400px] max-w-[280px] z-10 w-full xl:min-h-[581px] lg:min-h-[450px] min-h-[270px]' src={itWorkImg} alt="#" />
+                    <div className='lg:max-w-[300px] max-w-[250px] w-full lg:min-h-[396px] min-h-[270px] absolute lg:left-0 left-[0%] xl:bottom-[-9%] lg:bottom-[-12%] bottom-[0%] rounded-3xl bg-red'></div>
                 </div>
                 <div className='max-w-[592px] w-full lg:order-2 order-1'>
                     <CommonHeading HeadingName="How it works?" HeadingClass="text-start" />
