@@ -13,7 +13,7 @@ const Faq = () => {
       <div className="container mt-1">
         <div className="flex flex-col items-center">
           <CommonHeading HeadingName="Frequently Asked Questions" />
-          <p className='max-w-[592px] font-jakarta text-center font-normal text-lg text-black mt-5'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade</p>
+          <p className='max-w-[592px] font-jakarta text-center font-normal text-base md:text-lg text-black mt-5'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade</p>
         </div>
         <div className="pt-11">
           {ACCORDION_DATA.map((item, index) => (
