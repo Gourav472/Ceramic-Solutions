@@ -1,9 +1,13 @@
-import './App.css';
 import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
+import PreLoader from './components/PreLoader';
+import Choose from './components/Choose'
+import Customers from './components/Customers'
+import ItWork from './components/ItWork'
+import InTouch from './components/InTouch'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import PreLoader from './components/PreLoader';
+import './App.css';
 
 function App() {
   return (
@@ -11,8 +15,12 @@ function App() {
       <Hero />
       <WhatWeDo />
       <PreLoader />
+      <Choose />
+      <Customers />
+      <ItWork />
+      <InTouch />
     </div>
   );
 }
 
-export default App;
+export default App; 
