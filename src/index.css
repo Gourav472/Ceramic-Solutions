@@ -37,8 +37,7 @@
 }
 
 .we_do_slider .slick-track {
-    display: flex;
-
+    display: flex !important;
 }
 
 .we_do_slider .slick-track>div {
@@ -112,7 +111,7 @@
       padding-bottom: 96px;
   }
 }
- 
+
   @media (max-width: 768px) {
     .customer_slider .slick-track {
       padding-top:20px;
