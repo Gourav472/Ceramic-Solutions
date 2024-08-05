@@ -59,8 +59,18 @@ const Customers = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: "120px",
+          
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           centerMode: false,
           variableWidth: false,
+          centerPadding: "0",
         }
       },
     ],
@@ -119,9 +129,9 @@ const Customers = () => {
           </div>
         </div>
       </div>
-      <div className='customer_slider max-w-[1440px] mx-auto'>
+      <div className='customer_slider max-w-[1440px] max-sm:max-w-[380px] mx-auto'>
         <Slider {...settings1}>
-          <div className='bg-white rounded-3xl shadow-4xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
+          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
             <div className='flex items-center gap-2'>
               <img src={profile1} alt="#" />
               <div>
@@ -144,7 +154,7 @@ const Customers = () => {
               "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
             </p>
           </div>
-          <div className='bg-white rounded-3xl shadow-4xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
+          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
             <div className='flex items-center gap-2'>
               <img src={profile2} alt="#" />
               <div>
@@ -167,7 +177,7 @@ const Customers = () => {
               "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
             </p>
           </div>
-          <div className='bg-white rounded-3xl shadow-4xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
+          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
             <div className='flex items-center gap-2'>
               <img src={profile3} alt="#" />
               <div>
@@ -190,7 +200,7 @@ const Customers = () => {
               "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
             </p>
           </div>
-          <div className='bg-white rounded-3xl shadow-4xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
+          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
             <div className='flex items-center gap-2'>
               <img src={profile4} alt="#" />
               <div>
@@ -213,7 +223,7 @@ const Customers = () => {
               "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
             </p>
           </div>
-          <div className='bg-white rounded-3xl shadow-4xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
+          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
             <div className='flex items-center gap-2'>
               <img src={profile5} alt="#" />
               <div>
