@@ -45,7 +45,7 @@ const Footer = () => {
                             <a href="#hlo" className='font-jakarta font-normal text-base hidden md:flex capitalize text-primaryBlack'>Stay up to date</a>
                         </div>
                         <form method="get" className='flex items-center max-w-[340px] w-full mt-3 justify-between rounded-[62px] border-[#00000026] border-[1px] p-2.5'>
-                            <input type="email" placeholder='Your email' className='w-7/12 pl-3 outline-none' />
+                            <input type="email" placeholder='Your email' className='w-7/12 pl-3 outline-none' required />
                             <CommonBtn ButtonName="Subscribe" ButtonClass="bg-red text-white px-10" />
                         </form>
                     </div>
