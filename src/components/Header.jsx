@@ -30,7 +30,7 @@ const Header = () => {
     } else {
       e.preventDefault();
     }
-  };
+  };  
   return (
     <>
       <div className={`${!show ? "min-h-screen" : ""}`}>
