@@ -1,6 +1,6 @@
 import React from 'react';
 import CommonHeading from '../common/CommonHeading';
-import kitchen from "../assets/images/webp/kitchen.png";
+import kitchen from "../assets/images/webp/kitchen.webp";
 import Icon from '../common/Icons';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
