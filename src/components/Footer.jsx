@@ -3,7 +3,6 @@ import { FOOTER_DATA, SOCIAL_ICONS, FOOTER_HEADING } from '../common/Helper';
 import ceramic_logo from "../assets/images/svg/ceramic_logo.svg";
 import CommonBtn from '../common/CommonBtn';
 import Icon from '../common/Icons';
-
 const Footer = () => {
     const CURRENT_YEAR = new Date().getFullYear();
     return (
@@ -13,7 +12,7 @@ const Footer = () => {
                     <div className="lg:max-w-[250px] w-full">
                         <img src={ceramic_logo} alt="ceramic_logo" />
                         <a href="mailto:help@Dealzip.com" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-5 capitalize text-primaryBlack'><Icon iconName="Email" /> help@Dealzip.com</a>
-                        <a href="callto:+1 234 456 678 89" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-4  capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
+                        <a href="callto:+1 234 456 678 89" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
                         <div className="mt-6 flex items-center gap-2">
                             {SOCIAL_ICONS.map((index) => (
                                 <Icon iconName={index.icon} />
@@ -25,7 +24,7 @@ const Footer = () => {
                             <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
                             <div className="flex flex-col items-start gap-3 mt-4">
                                 {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta font-normal text-base  capitalize text-primaryBlack'>{i.heading_text}</a>
+                                    <a key={i.id} href="#hlo" className='font-jakarta font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
                                 ))}
                             </div>
                         </div>
@@ -35,7 +34,7 @@ const Footer = () => {
                             <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
                             <div className="flex flex-col items-start gap-3 mt-4">
                                 {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta font-normal text-base  capitalize text-primaryBlack'>{i.heading_text}</a>
+                                    <a key={i.id} href="#hlo" className='font-jakarta font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
                                 ))}
                             </div>
                         </div>
@@ -57,5 +56,4 @@ const Footer = () => {
         </div>
     )
 }
-
 export default Footer

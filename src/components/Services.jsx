@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import CommonHeading from '../common/CommonHeading';
 import Icon from '../common/Icons';
 import { LOCATION_MARK } from "../common/Helper";
-
 const createColumns = (data, isMobile) => {
     const FirstColumn = data.filter((_, index) => index % 3 === 0);
     const SecondColumn = data.filter((_, index) => index % 3 === 1);
@@ -57,5 +56,4 @@ const Services = () => {
         </div>
     );
 }
-
 export default Services;

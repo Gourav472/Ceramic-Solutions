@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import CommonHeading from '../common/CommonHeading';
 import { ACCORDION_DATA } from "../common/Helper";
 import Icon from '../common/Icons';
-
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const handleToggle = (index) => {
@@ -29,7 +28,7 @@ const Faq = () => {
                   </div>
                   <Icon iconName="AccordionIcon" className={`${openIndex === index ? 'rotate-180' : ''} duration-500 ease-linear`} />
                 </div>
-                <div className=" overflow-hidden relative">
+                <div className="overflow-hidden relative">
                   <div
                     className={`accordion-content flex items-start gap-3 pl-5 pb-[15.2px] max-w-[759px] w-full duration-300 ease-linear ${openIndex === index ? ' relative top-5' : '-translate-y-full -top-24 absolute'}`}
                   >
@@ -44,5 +43,4 @@ const Faq = () => {
     </div>
   )
 }
-
 export default Faq

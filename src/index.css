@@ -37,8 +37,7 @@
 }
 
 .we_do_slider .slick-track {
-    display: flex;
-
+    display: flex !important;
 }
 
 .we_do_slider .slick-track>div {
@@ -91,15 +90,32 @@
 
 .customer_slider .slick-track {
     display: flex !important;
+    padding-top:48px;
+    padding-bottom: 124px;
 }
 
 @media (max-width: 768px) {
     .customer_slider .slick-slide>div {
         display: flex !important;
         justify-content: center !important;
-    }
+  }
 
-    .customer_slider .slick-track {
-        display: flex !important;
-    }
+  .customer_slider .slick-slide >div {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .customer_slider .slick-track {
+      display: flex !important;
+      padding-top:36px;
+      padding-bottom: 96px;
+  }
 }
+
+  @media (max-width: 768px) {
+    .customer_slider .slick-track {
+      padding-top:20px;
+      padding-bottom: 70px;
+    }
+  }
+ 
