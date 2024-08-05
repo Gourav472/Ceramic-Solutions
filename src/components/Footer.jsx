@@ -15,7 +15,7 @@ const Footer = () => {
                         <a href="callto:+1 234 456 678 89" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
                         <div className="mt-6 flex items-center gap-2">
                             {SOCIAL_ICONS.map((index) => (
-                                <Icon iconName={index.icon} />
+                                <a href={index.link} target='_blank' rel="noreferrer" className='ease-linear duration-300 hover:shadow-[0px_0px_10px_red] rounded-full'><Icon iconName={index.icon} /></a>
                             ))}
                         </div>
                     </div>

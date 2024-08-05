@@ -167,8 +167,8 @@ export const FOOTER_HEADING = [
 ];
 
 export const SOCIAL_ICONS = [
-    { icon: "FaceBook" },
-    { icon: "Instagram_Red" },
-    { icon: "Twitter" },
-    { icon: "Linkedin" },
+    { icon: "FaceBook", link: "https://www.facebook.com/" },
+    { icon: "Instagram_Red", link: "https://www.instagram.com/accounts/login/?hl=en" },
+    { icon: "Twitter", link: "https://x.com/i/flow/login" },
+    { icon: "Linkedin", link: "https://in.linkedin.com/" },
 ]
