@@ -4,7 +4,7 @@ import CommonBtn from '../common/CommonBtn'
 const InTouch = () => {
     return (
         <div className='container'>
-            <div className='bg-touch_bg bg-no-repeat bg-full rounded-3xl'>
+            <div className='bg-touch_bg bg-no-repeat sm:bg-full bg-cover rounded-3xl'>
                 <div className='md:py-16 sm:py-11 py-9 px-6 flex flex-col justify-center items-center'>
                     <CommonHeading HeadingName="Interested?" HeadingClass="max-w-[547px] text-white text-center" />
                     <CommonHeading HeadingName="Get In Touch With Us" HeadingClass="sm:max-w-[547px] max-w-[259px] text-white text-center" />
