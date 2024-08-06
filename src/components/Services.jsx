@@ -39,11 +39,11 @@ const Services = () => {
                     </p>
                 </div>
                 <div className="pt-8 flex justify-center">
-                    <div className="flex flex-wrap flex-row -mx-3 w-full sm:gap-0 gap-5 justify-center">
+                    <div className="flex flex-wrap flex-row -mx-3 sm:gap-0 gap-5 justify-center">
                         {columns.map((location, index) => (
                             <div key={index} className="sm:w-1/2 sm:max-w-full w-full max-w-[161px] lg:w-4/12 sm:px-3 -mt-1 sm:mt-6">
-                                <div className="shadow-4xl p-3 sm:p-6 rounded-3xl w-full bg-white flex items-center gap-3 custom_duration hover:shadow-offRed hover:shadow-[0px_0px_0px_2px] cursor-pointer">
-                                    <Icon iconName="LocationMark" className="py-[14px] px-3 bg-red rounded-full" />
+                                <div className="shadow-4xl px-3 py-2 sm:px-6 sm:py-[22px] rounded-3xl w-full bg-white flex items-center gap-3 custom_duration border-2 border-transparent hover:border-offRed cursor-pointer">
+                                    <Icon iconName="LocationMark" className="md:py-[14px] py-2.5 px-3 bg-red rounded-full" />
                                     <p className='font-jakarta font-semibold text-lg sm:text-2xl text-black'>
                                         {isMobile ? "Knoxville" : location.name}
                                     </p>

@@ -72,7 +72,7 @@ const Blog = () => {
                     </p>
                 </div>
                 <div className="lg:flex lg:justify-center lg:mt-14 mt-8">
-                    <div className="lg:flex flex-row w-full -mx-3 hidden">
+                    <div className="lg:flex flex-row -mx-3 hidden">
                         {ENTRIES.map(entry => (
                             <div key={entry.id} className="w-4/12 px-3 mb-6">
                                 <BlogCard {...entry} />

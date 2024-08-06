@@ -8,7 +8,7 @@ const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className='pt-20 pb-14'>
+    <div className='xl:pt-20 pt-7 pb-14'>
       <div className="container mt-1">
         <div className="flex flex-col items-center">
           <CommonHeading HeadingName="Frequently Asked Questions" />
@@ -26,7 +26,7 @@ const Faq = () => {
                   <div className="flex items-start sm:items-center gap-1.5">
                     <h3 className="text-black font-jakarta font-normal text-base sm:text-lg">{item.title}</h3>
                   </div>
-                  <Icon iconName="AccordionIcon" className={`${openIndex === index ? 'rotate-180' : ''} duration-500 ease-linear`} />
+                  <Icon iconName="AccordionIcon" className={`${openIndex === index ? 'rotate-180' : ''} duration-300 ease-linear`} />
                 </div>
                 <div className="overflow-hidden relative">
                   <div
