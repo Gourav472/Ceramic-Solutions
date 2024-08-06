@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
                         <form method="get" className='flex items-center max-w-[340px] w-full mt-3 justify-between rounded-[62px] border-[#00000026] border-[1px] p-2.5'>
                             <input type="email" placeholder='Your email' className='w-7/12 pl-3 outline-none' required />
-                            <CommonBtn ButtonName="Subscribe" ButtonClass="bg-red text-white px-10" />
+                            <CommonBtn ButtonName="Subscribe" ButtonClass="bg-red text-white px-10 border-2 sm:py-3 hover:bg-white hover:text-red h-[55px]" />
                         </form>
                     </div>
                 </div>
