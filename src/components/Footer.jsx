@@ -32,21 +32,11 @@ const Footer = () => {
                         </div>
                     </div>
                     {FOOTER_DATA.map((index) => (
-                        <div key={index.heading} className="max-w-[105px] hidden md:block w-full px-1 text-nowrap md:w-fit mt-6 lg:mt-0">
+                        <div key={index.heading} className="max-w-[105px] w-full px-1 text-nowrap md:w-fit mt-6 lg:mt-0">
                             <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
                             <div className="flex flex-col items-start gap-3 mt-4">
                                 {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                    {FOOTER_HEADING.map((index) => (
-                        <div key={index.heading} className="max-w-[105px] md:hidden w-full px-1 text-nowrap md:w-fit mt-6 lg:mt-0">
-                            <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
-                            <div className="flex flex-col items-start gap-3 mt-4">
-                                {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
+                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.text}</a>
                                 ))}
                             </div>
                         </div>
