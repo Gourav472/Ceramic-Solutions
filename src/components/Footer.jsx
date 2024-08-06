@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FOOTER_DATA, SOCIAL_ICONS, FOOTER_HEADING } from '../common/Helper';
-import ceramic_logo from "../assets/images/svg/ceramic_logo.svg";
+import ceramicLogo from "../assets/images/svg/ceramic_logo.svg";
 import CommonBtn from '../common/CommonBtn';
 import Icon from '../common/Icons';
 
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="container flex justify-center pb-11">
                 <div className="flex flex-wrap flex-row justify-between -mx-3 w-full">
                     <div className="lg:max-w-[250px] w-full">
-                       <a href="/"><img src={ceramic_logo} alt="ceramic_logo" className='max-w-[175px] pointer-events-none w-full' /></a>
+                        <img src={ceramicLogo} alt="ceramicLogo" className='max-w-[175px] w-full' />
                         <a href="mailto:help@Dealzip.com" className='font-jakarta custom_duration hover:text-red font-normal text-base flex items-center gap-2.5 mt-5 capitalize text-primaryBlack'><Icon iconName="Email" /> help@Dealzip.com</a>
                         <a href="tel:+123445667889" className='font-jakarta font-normal custom_duration hover:text-red text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
                         <div className="mt-6 flex items-center gap-2">
@@ -32,21 +32,11 @@ const Footer = () => {
                         </div>
                     </div>
                     {FOOTER_DATA.map((index) => (
-                        <div key={index.heading} className="max-w-[105px] hidden md:block w-full px-1 text-nowrap md:w-fit mt-6 lg:mt-0">
+                        <div key={index.heading} className="max-w-[105px] w-full px-1 text-nowrap md:w-fit mt-6 lg:mt-0">
                             <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
                             <div className="flex flex-col items-start gap-3 mt-4">
                                 {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                    {FOOTER_HEADING.map((index) => (
-                        <div key={index.heading} className="max-w-[105px] md:hidden w-full px-1 text-nowrap md:w-fit mt-6 lg:mt-0">
-                            <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
-                            <div className="flex flex-col items-start gap-3 mt-4">
-                                {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
+                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.text}</a>
                                 ))}
                             </div>
                         </div>

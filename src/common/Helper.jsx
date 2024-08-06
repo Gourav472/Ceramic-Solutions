@@ -120,48 +120,24 @@ export const LOCATION_MARK = [
 export const FOOTER_DATA = [
     {
         heading: "links", link: [
-            { id: "1", heading_text: "Home" },
-            { id: "1", heading_text: "about us" },
-            { id: "1", heading_text: "Services" },
-            { id: "1", heading_text: "Showcase" },
+            { id: "1", text: "Home" },
+            { id: "1", text: "about us" },
+            { id: "1", text: "Services" },
+            { id: "1", text: "Showcase" },
         ]
     },
     {
         heading: "legal", link: [
-            { id: "1", heading_text: "terms of use" },
-            { id: "1", heading_text: "privacy policy" },
-            { id: "1", heading_text: "cookie policy" },
+            { id: "1", text: "terms of use" },
+            { id: "1", text: "privacy policy" },
+            { id: "1", text: "cookie policy" },
         ]
     },
     {
         heading: "product", link: [
-            { id: "1", heading_text: "take tour" },
-            { id: "1", heading_text: "live chat" },
-            { id: "1", heading_text: "reveiws" },
-        ]
-    },
-];
-export const FOOTER_HEADING = [
-    {
-        heading: "legal", link: [
-            { id: "1", heading_text: "terms of use" },
-            { id: "1", heading_text: "privacy policy" },
-            { id: "1", heading_text: "cookie policy" },
-        ]
-    },
-    {
-        heading: "product", link: [
-            { id: "1", heading_text: "take tour" },
-            { id: "1", heading_text: "live chat" },
-            { id: "1", heading_text: "reveiws" },
-        ]
-    },
-    {
-        heading: "links", link: [
-            { id: "1", heading_text: "Home" },
-            { id: "1", heading_text: "about us" },
-            { id: "1", heading_text: "Services" },
-            { id: "1", heading_text: "Showcase" },
+            { id: "1", text: "take tour" },
+            { id: "1", text: "live chat" },
+            { id: "1", text: "reveiws" },
         ]
     },
 ];
