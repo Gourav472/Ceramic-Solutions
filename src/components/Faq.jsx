@@ -4,7 +4,7 @@ import { ACCORDION_DATA } from "../common/Helper";
 import Icon from '../common/Icons';
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const handleToggle = (index) => {
+  const HANDLE_TOGGLE = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
@@ -20,7 +20,7 @@ const Faq = () => {
               <div className="accordion w-full">
                 <div
                   className="duration-700 ease-linear accordion-header relative z-[1] px-5 flex items-center justify-between rounded-2xl bg-white shadow-4xl gap-1.5 cursor-pointer p-5"
-                  onClick={() => handleToggle(index)}
+                  onClick={() => HANDLE_TOGGLE(index)}
                   aria-expanded={openIndex === index}
                 >
                   <div className="flex items-start sm:items-center gap-1.5">

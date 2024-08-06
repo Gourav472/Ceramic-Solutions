@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FOOTER_DATA, SOCIAL_ICONS, FOOTER_HEADING } from '../common/Helper';
-import ceramic_logo from "../assets/images/svg/ceramic_logo.svg";
+import ceramicLogo from "../assets/images/svg/ceramic_logo.svg";
 import CommonBtn from '../common/CommonBtn';
 import Icon from '../common/Icons';
 
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="container flex justify-center pb-11">
                 <div className="flex flex-wrap flex-row justify-between -mx-3 w-full">
                     <div className="lg:max-w-[250px] w-full">
-                        <img src={ceramic_logo} alt="ceramic_logo" className='max-w-[175px] w-full' />
+                        <img src={ceramicLogo} alt="ceramicLogo" className='max-w-[175px] w-full' />
                         <a href="mailto:help@Dealzip.com" className='font-jakarta custom_duration hover:text-red font-normal text-base flex items-center gap-2.5 mt-5 capitalize text-primaryBlack'><Icon iconName="Email" /> help@Dealzip.com</a>
                         <a href="callto:+1 234 456 678 89" className='font-jakarta font-normal custom_duration hover:text-red text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
                         <div className="mt-6 flex items-center gap-2">
