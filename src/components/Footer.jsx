@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='xl:pt-16 pt-6 pb-4'>
             <div className="container flex justify-center pb-11">
                 <div className="flex flex-wrap flex-row justify-between -mx-3 w-full">
-                    <div className="lg:max-w-[250px] w-full">
+                    <div className="lg:max-w-[250px] w-full"> 
                         <img src={ceramic_logo} alt="ceramic_logo" />
                         <a href="mailto:help@Dealzip.com" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-5 capitalize text-primaryBlack'><Icon iconName="Email" /> help@Dealzip.com</a>
                         <a href="callto:+1 234 456 678 89" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>

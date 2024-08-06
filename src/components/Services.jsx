@@ -42,8 +42,8 @@ const Services = () => {
                     <div className="flex flex-wrap flex-row -mx-3 w-full sm:gap-0 gap-5 justify-center">
                         {columns.map((location, index) => (
                             <div key={index} className="sm:w-1/2 sm:max-w-full w-full max-w-[161px] lg:w-4/12 sm:px-3 -mt-1 sm:mt-6">
-                                <div className="shadow-4xl p-3 sm:p-6 rounded-3xl w-full bg-white flex items-center gap-3">
-                                    <Icon iconName="LocationMark" className="py-[10.5px] px-3 bg-red rounded-full" />
+                                <div className="shadow-4xl p-3 sm:p-6 rounded-3xl w-full bg-white flex items-center gap-3 custom_duration hover:shadow-offRed hover:shadow-[0px_0px_0px_2px] cursor-pointer">
+                                    <Icon iconName="LocationMark" className="py-[14px] px-3 bg-red rounded-full" />
                                     <p className='font-jakarta font-semibold text-lg sm:text-2xl text-black'>
                                         {isMobile ? "Knoxville" : location.name}
                                     </p>
