@@ -5,7 +5,7 @@ import chooseImg from '../assets/images/webp/choose_img.webp'
 import CommonBtn from '../common/CommonBtn';
 const Choose = () => {
   return (
-    <div className='bg-lightPink lg:py-[104px] md:py-20 sm:py-[70px] py-16'>
+    <div id='services' className='bg-lightPink lg:py-[104px] md:py-20 sm:py-[70px] py-16'>
       <div className="container">
         <div className="flex lg:flex-row flex-col sm:items-center">
           <div className="max-w-[590px] w-full">

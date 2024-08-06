@@ -42,7 +42,7 @@ const WhatWeDo = () => {
             },]
     };
     return (
-        <div className='pt-[76px] pb-[90px] md:py-[140.5px]'>
+        <div id='about' className='pt-[76px] pb-[90px] md:py-[140.5px]'>
             <div className='container px-[7px]'>
                 <CommonHeading HeadingName="What We Do" />
                 <div className='max-lg:hidden flex flex-wrap flex-row -mx-3 pt-8'>

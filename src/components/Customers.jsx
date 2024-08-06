@@ -76,7 +76,7 @@ const Customers = () => {
     ],
   };
   return (
-    <div className='lg:pt-[140px] md:pt-24 pt-20'>
+    <div id='portfolio' className='lg:pt-[140px] md:pt-24 pt-20'>
       <div className='container'>
         <div className='flex flex-col justify-center items-center'>
           <CommonHeading HeadingName="What Our Customers Say" HeadingClass="sm:max-w-[674px] max-w-[300px] text-center" />
