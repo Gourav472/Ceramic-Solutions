@@ -46,7 +46,7 @@ const Choose = () => {
                 </p>
               </div>
             </div>
-            <CommonBtn ButtonName='Get a Quote' ButtonClass='text-white bg-red max-w-[173px] w-full h-[63px]' />
+            <CommonBtn ButtonName='Get a Quote' ButtonClass='text-white bg-red hover:bg-transparent border-[2px] hover:text-red max-w-[173px] lg:px-0 px-0 w-full h-[63px]' />
           </div>
           <div className='lg:max-w-[549px] max-w-[400px] max-lg:mx-auto w-full sm:flex hidden justify-end relative pb-20 lg:mt-0 mt-8'>
             <img className='xl:max-w-[469px] lg:max-w-[400px] max-w-[330px] lg:min-h-[523px] min-h-[370px] z-10 w-full' src={chooseImg} alt="#" />

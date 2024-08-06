@@ -56,8 +56,8 @@ const ItWork = () => {
                         </div>
                     </div>
                     <div className='flex sm:gap-6 gap-[6px] md:pt-10 sm:pt-7 pt-6'>
-                        <CommonBtn ButtonName='Get a Quote' ButtonClass='text-white bg-red max-sm:text-base sm:max-w-[173px] max-sm:px[23px] max-w-[143px] w-full sm:h-[63px] h-[60px]' />
-                        <CommonBtn ButtonName='View Tile Visualizer' ButtonClass='text-red max-sm:text-base max-sm:px[23px] bg-white sm:max-w-[228px] lg:px-[30px] max-w-[194px] w-full sm:h-[63px] h-[60px]' />
+                        <CommonBtn ButtonName='Get a Quote' ButtonClass='text-white bg-red max-sm:text-base sm:max-w-[173px] max-sm:px[23px] max-w-[143px] w-full sm:h-[63px] h-[60px] hover:bg-transparent border-[1px] hover:text-red' />
+                        <CommonBtn ButtonName='View Tile Visualizer' ButtonClass='text-red max-sm:text-base max-sm:px[23px] bg-white sm:max-w-[228px] lg:px-[30px] max-w-[194px] w-full sm:h-[63px] h-[60px] hover:shadow-7xl' />
                     </div>
                 </div>
             </div>
