@@ -51,11 +51,12 @@ const Header = () => {
                 </a>
               </li>
             ))}
-            <li><a className='lg:hidden font-jakarta font-bold text-xl leading-6 text-white flex gap-[10px] bg-red p-[12.5px_19px] rounded-[56px] custom_duration hover:scale-95'><span><Icon iconName="Phone" /></span>(865) 621-1717</a>
+            <li><a href="tel:+8656211717" className=' lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] hover:bg-transparent hover:border-red border-[2px] border-transparent bg-red p-[12.5px_19px] rounded-[56px] hover:text-red group custom_duration'><span><Icon iconName="Phone" /></span>(865) 621-1717</a>
+
             </li>
           </ul>
           <div className="flex items-center sm:gap-6 gap-3">
-            <a> <button className='max-lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] hover:bg-transparent hover:border-red border-[2px] border-transparent bg-red p-[12.5px_19px] rounded-[56px] hover:text-red group custom_duration'><span><Icon iconName="Phone" /></span>(865) 621-1717</button></a>
+            <a href="tel:+8656211717" className='max-lg:hidden font-jakarta font-bold text-base leading-5 text-white flex gap-[10px] hover:bg-transparent hover:border-red border-[2px] border-transparent bg-red p-[12.5px_19px] rounded-[56px] hover:text-red group custom_duration'><span><Icon iconName="Phone" /></span>(865) 621-1717</a>
             <div
               className={`cursor-pointer relative z-[100] lg:hidden ${show ? "" : "cross"}`}
               onClick={() => setShow(!show)}>
