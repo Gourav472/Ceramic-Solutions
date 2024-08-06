@@ -6,16 +6,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const BlogCard = ({ imgSrc, title, link }) => (
-    <div className="p-6 shadow-[0px_0px_12px_3px_lightGray] w-full h-full rounded-3xl">
-        <img src={imgSrc} alt="Blog" className='w-full' />
+    <div className="p-6 shadow-[0px_0px_12px_3px_lightGray] w-full h-full rounded-3xl hover:shadow-offRed hover:shadow-[0px_0px_0px_2px] custom_duration">
+        <div className="overflow-hidden rounded-xl">
+            <img src={imgSrc} alt="Blog" className='w-full custom_duration hover:scale-105 cursor-pointer' />
+        </div>
         <p className='xl:mt-6 mt-3 font-jakarta font-semibold text-lg xl:text-2xl xl:leading-[38px] text-black'>
             {title}
         </p>
-        <a href={link} className='flex items-center gap-2.5 mt-3 xl:mt-6'>
+        <a href={link} className='flex items-center gap-2.5 mt-3 xl:mt-6 group w-fit'>
             <p className='font-jakarta font-semibold text-base text-red'>
                 Learn more
             </p>
-            <Icon iconName="RightArrow" className="mt-0.5" />
+            <Icon iconName="RightArrow" className="mt-0.5 custom_duration group-hover:ml-1 group-hover:scale-110" />
         </a>
     </div>
 );

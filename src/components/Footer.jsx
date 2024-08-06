@@ -10,9 +10,9 @@ const Footer = () => {
             <div className="container flex justify-center pb-11">
                 <div className="flex flex-wrap flex-row justify-between -mx-3 w-full">
                     <div className="lg:max-w-[250px] w-full">
-                        <img src={ceramic_logo} alt="ceramic_logo" />
-                        <a href="mailto:help@Dealzip.com" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-5 capitalize text-primaryBlack'><Icon iconName="Email" /> help@Dealzip.com</a>
-                        <a href="callto:+1 234 456 678 89" className='font-jakarta font-normal text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
+                        <img src={ceramic_logo} alt="ceramic_logo" className='max-w-[175px] w-full' />
+                        <a href="mailto:help@Dealzip.com" className='font-jakarta custom_duration hover:text-red font-normal text-base flex items-center gap-2.5 mt-5 capitalize text-primaryBlack'><Icon iconName="Email" /> help@Dealzip.com</a>
+                        <a href="tel:+123445667889" className='font-jakarta font-normal custom_duration hover:text-red text-base flex items-center gap-2.5 mt-4 capitalize text-primaryBlack'><Icon iconName="Phone_Red" />+1 234 456 678 89</a>
                         <div className="mt-6 flex items-center gap-2">
                             {SOCIAL_ICONS.map((index) => (
                                 <a href={index.link} target='_blank' rel="noreferrer" className='ease-linear duration-300 hover:shadow-[0px_0px_10px_red] rounded-full'><Icon iconName={index.icon} /></a>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
                             <div className="flex flex-col items-start gap-3 mt-4">
                                 {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
+                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
                                 ))}
                             </div>
                         </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                             <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>{index.heading}</p>
                             <div className="flex flex-col items-start gap-3 mt-4">
                                 {index.link.map((i) => (
-                                    <a key={i.id} href="#hlo" className='font-jakarta font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
+                                    <a key={i.id} href="#hlo" className='font-jakarta custom_duration hover:text-red font-normal text-base capitalize text-primaryBlack'>{i.heading_text}</a>
                                 ))}
                             </div>
                         </div>
@@ -42,11 +42,11 @@ const Footer = () => {
                     <div className="lg:w-4/12 md:w-1/2 w-full px-3 mt-6 lg:mt-0">
                         <p className='font-jakarta font-semibold text-xl capitalize text-primaryBlack'>Newsletter</p>
                         <div className="flex flex-col items-start gap-3 mt-4">
-                            <a href="#hlo" className='font-jakarta font-normal text-base hidden md:flex capitalize text-primaryBlack'>Stay up to date</a>
+                            <a href="#hlo" className='font-jakarta font-normal custom_duration hover:text-red text-base hidden md:flex capitalize text-primaryBlack'>Stay up to date</a>
                         </div>
                         <form method="get" className='flex items-center max-w-[340px] w-full mt-3 justify-between rounded-[62px] border-[#00000026] border-[1px] p-2.5'>
                             <input type="email" placeholder='Your email' className='w-7/12 pl-3 outline-none' required />
-                            <CommonBtn ButtonName="Subscribe" ButtonClass="bg-red text-white px-10" />
+                            <CommonBtn ButtonName="Subscribe" ButtonClass="bg-red text-white px-10 border-2 sm:py-3 hover:bg-white hover:text-red h-[55px]" />
                         </form>
                     </div>
                 </div>
