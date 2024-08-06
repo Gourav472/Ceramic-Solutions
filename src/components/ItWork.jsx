@@ -5,7 +5,7 @@ import Icon from '../common/Icons'
 import CommonBtn from '../common/CommonBtn'
 const ItWork = () => {
     return (
-        <div className='lg:pb-[148px] md:pb-24 pb-20 container'>
+        <div id='request' className='lg:pb-[148px] md:pb-24 pb-20 container'>
             <div className="flex max-lg:flex-col xl:gap-[63px] max-xl:items-center items-start lg:gap-10 gap-14">
                 <div className='xl:max-w-[485px] lg:order-1 order-2 lg:max-w-[460px] max-w-[400px] max-lg:mx-auto w-full sm:flex hidden lg:justify-end justify-center relative lg:pb-0 pb-14'>
                     <img className='xl:max-w-[435px] lg:max-w-[400px] max-w-[280px] z-10 w-full xl:min-h-[581px] lg:min-h-[450px] min-h-[270px]' src={itWorkImg} alt="#" />

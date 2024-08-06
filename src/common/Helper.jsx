@@ -7,7 +7,7 @@ import adaShower from '../assets/images/webp/ada_shower.webp'
 import fireplace from '../assets/images/webp/fireplace.webp'
 export const NAV_ITEMS_DATA = [
     {
-        href: "#",
+        href: "/",
         text: "Home",
         className: "navitems",
     },
@@ -165,7 +165,6 @@ export const FOOTER_HEADING = [
         ]
     },
 ];
-
 export const SOCIAL_ICONS = [
     { icon: "FaceBook" },
     { icon: "Instagram_Red" },
