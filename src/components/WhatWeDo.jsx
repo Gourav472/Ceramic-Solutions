@@ -43,7 +43,7 @@ const WhatWeDo = () => {
     };
     return (
         <div id='about' className='pt-[76px] pb-[90px] md:py-[140.5px]'>
-            <div className='container px-[7px]'>
+            <div className='container max-md:px-[7px]'>
                 <CommonHeading HeadingName="What We Do" />
                 <div className='max-lg:hidden flex flex-wrap flex-row -mx-3 pt-8'>
                     {WHAT_DO_CARDS.map((index) => (
@@ -52,9 +52,9 @@ const WhatWeDo = () => {
                                 <img className='pointer-events-none max-w-[316px] xl:w-[316px] xl:h-[246px] w-full' src={index.image} alt={index.image} />
                                 <p className='font-jakarta font-semibold text-xl xl:text-2xl leading-7 xl:leading-[38px] text-black pt-6'>{index.heading}</p>
                                 <p className='font-jakarta font-normal text-base leading-6 text-black pt-3'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.</p>
-                                <a href='#learn' className='flex w-fit gap-[10px] mt-6 items-center ont-jakarta font-semibold text-base leading-6 text-red'>
+                                <a href='#learn' className='flex w-fit gap-[10px] mt-6 items-center custom_duration group font-jakarta font-semibold text-base leading-6 text-red'>
                                     Learn more
-                                    <Icon iconName="RightIcon" className="mt-0.5" />
+                                    <Icon iconName="RightIcon" className="group-hover:translate-x-1" />
                                 </a>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const WhatWeDo = () => {
                                 <img className='max-sm:w-[294px] max-sm:h-[246px] sm:max-w-[294px] sm:w-full pointer-events-none' src={index.image} alt={index.image} />
                                 <p className='font-jakarta font-semibold text-xl leading-8 text-black pt-6'>{index.heading}</p>
                                 <p className='font-jakarta font-normal text-sm leading-[22px] text-black pt-3'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.</p>
-                                <a href='#learn' className='flex w-fit gap-[10px] mt-6 items-center ont-jakarta font-semibold text-base leading-6 text-red'>
+                                <a href='#learn' className='flex w-fit gap-[10px] mt-6 items-center font-jakarta font-semibold text-base leading-6 text-red'>
                                     Learn more
                                     <Icon iconName="RightIcon" className="mt-0.5" />
                                 </a>

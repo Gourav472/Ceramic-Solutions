@@ -7,7 +7,7 @@
 
 @layer components {
     .navitems {
-        @apply font-jakarta font-normal text-base leading-6 text-black;
+        @apply font-jakarta font-normal text-xl custom_duration hover:text-red lg:text-base leading-6 text-black;
     }
 
     .nav-toggle-items {
