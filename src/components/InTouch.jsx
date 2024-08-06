@@ -11,8 +11,8 @@ const InTouch = () => {
                     <p className="max-w-[592px] text-center font-jakarta font-normal sm:text-lg text-base sm:leading-7 leading-[25.5px] text-white sm:pt-5 pt-4 sm:pb-9 pb-[34px]">
                         Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt.
                     </p>
-                    <CommonBtn ButtonName='Get a Quote' ButtonClass='text-red bg-white max-w-[173px] sm:flex justify-center items-center hidden w-full h-[63px]' />
-                    <CommonBtn ButtonName='Contact Us' ButtonClass='text-red bg-white max-w-[135px] sm:hidden justify-center items-center flex w-full h-[56px] max-sm:py-[18px]' />
+                    <CommonBtn ButtonName='Get a Quote' ButtonClass='text-red bg-white max-w-[173px] sm:flex justify-center items-center hidden w-full h-[63px] hover:shadow-7xl' />
+                    <CommonBtn ButtonName='Contact Us' ButtonClass='text-red bg-white max-w-[135px] sm:hidden justify-center items-center flex w-full h-[56px] max-sm:py-[18px] hover:shadow-7xl' />
                 </div>
             </div>
        </div>

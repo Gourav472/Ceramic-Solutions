@@ -86,9 +86,9 @@
 
 .customer_slider .slick-track .slick-slide {
     margin: 0 12px !important;
-}
+  }
 
-.customer_slider .slick-track {
+  .customer_slider .slick-track {
     display: flex !important;
     padding-top:48px;
     padding-bottom: 124px;
