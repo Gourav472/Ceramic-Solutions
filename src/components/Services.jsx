@@ -33,8 +33,8 @@ const Services = () => {
         <div className='xl:pt-20 pt-px pb-14'>
             <div className="container mt-1">
                 <div className="flex flex-col items-start max-w-[589px] w-full">
-                    <CommonHeading HeadingName="Frequently Asked Questions" HeadingClass="text-start" />
-                    <p className='font-jakarta text-left font-normal text-lg text-black mt-5'>
+                    <CommonHeading HeadingName="We provide services in these areas" HeadingClass="text-start" />
+                    <p className='font-jakarta text-left font-normal text-base md:text-lg text-black mt-5'>
                         Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade
                     </p>
                 </div>

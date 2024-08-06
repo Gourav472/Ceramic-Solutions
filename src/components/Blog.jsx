@@ -1,6 +1,6 @@
 import React from 'react';
 import CommonHeading from '../common/CommonHeading';
-import kitchen from "../assets/images/webp/kitchen.png";
+import kitchen from "../assets/images/webp/kitchen.webp";
 import Icon from '../common/Icons';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -65,7 +65,7 @@ const Blog = () => {
             <div className="container">
                 <div className="flex flex-col items-center">
                     <CommonHeading HeadingClass="" HeadingName="Our Blog" />
-                    <p className='max-w-[592px] font-jakarta text-center font-normal text-lg text-black mt-5'>
+                    <p className='max-w-[592px] font-jakarta text-center font-normal text-sm md:text-lg text-black mt-5'>
                         Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade
                     </p>
                 </div>

@@ -15,7 +15,7 @@ const InTouch = () => {
                     <CommonBtn ButtonName='Contact Us' ButtonClass='text-red bg-white max-w-[135px] sm:hidden justify-center items-center flex w-full h-[56px] max-sm:py-[18px]' />
                 </div>
             </div>
-        </div>
+       </div>
     )
 }
 export default InTouch
