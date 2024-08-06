@@ -54,7 +54,7 @@ const WhatWeDo = () => {
                                 <p className='font-jakarta font-normal text-base leading-6 text-black pt-3'>Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.</p>
                                 <a href='#learn' className='flex w-fit gap-[10px] mt-6 items-center custom_duration group font-jakarta font-semibold text-base leading-6 text-red'>
                                     Learn more
-                                    <Icon iconName="RightIcon" className="group-hover:translate-x-1" />
+                                    <Icon iconName="RightIcon" className="group-hover:translate-x-1 custom_duration" />
                                 </a>
                             </div>
                         </div>

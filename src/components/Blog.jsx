@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const BlogCard = ({ imgSrc, title, link }) => (
     <div className="p-6 shadow-[0px_0px_12px_3px_lightGray] w-full h-full rounded-3xl hover:shadow-offRed hover:shadow-[0px_0px_0px_2px] custom_duration">
         <div className="overflow-hidden rounded-xl">
-            <img src={imgSrc} alt="Blog" className='w-full custom_duration hover:scale-105 cursor-pointer' />
+            <img src={imgSrc} alt="Blog" className='w-full custom_duration hover:scale-105 pointer-events-none cursor-pointer' />
         </div>
         <p className='xl:mt-6 mt-3 font-jakarta font-semibold text-lg xl:text-2xl xl:leading-[38px] text-black'>
             {title}
