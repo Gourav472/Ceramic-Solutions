@@ -8,7 +8,7 @@ const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className='pt-20 pb-14'>
+    <div className='xl:pt-20 pt-7 pb-14'>
       <div className="container mt-1">
         <div className="flex flex-col items-center">
           <CommonHeading HeadingName="Frequently Asked Questions" />
