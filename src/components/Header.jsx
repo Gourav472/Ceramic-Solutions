@@ -35,7 +35,7 @@ const Header = () => {
     <>
       <div className={`${!show ? "min-h-screen" : ""}`}>
         <div className="flex justify-between items-center bg-white p-[14px_22px_14px_14px] lg:p-4 rounded-3xl ">
-          <a className='max-sm:max-w-[97px] pointer-events-none' href="/"><img src={ceramicLogo} alt="logo" /></a>
+          <a  href="/" className='max-sm:max-w-[97px]'><img src={ceramicLogo} alt="logo" /></a>
           <ul
             className={`flex flex-col lg:flex-row items-center gap-7 lg:gap-5 xl:gap-7 max-lg:fixed max-lg:justify-center custom_duration top-0 max-lg:-right-full max-lg:bg-white max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
               }`}

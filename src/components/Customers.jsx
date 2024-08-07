@@ -2,12 +2,9 @@ import React from 'react'
 import CommonHeading from '../common/CommonHeading'
 import Icon from '../common/Icons'
 import reviewStar from '../assets/images/svg/review_star.svg'
-
 import Slider from 'react-slick'
 import { SLIDER_DATA } from '../common/Helper'
-
 const Customers = () => {
-
   var settings1 = {
     arrows: false,
     dots: false,
@@ -67,7 +64,6 @@ const Customers = () => {
       },
     ],
   };
-
   return (
     <div id='portfolio' className='lg:pt-[140px] md:pt-24 pt-20'>
       <div className='container'>
@@ -154,5 +150,4 @@ const Customers = () => {
     </div>
   )
 }
-
 export default Customers
