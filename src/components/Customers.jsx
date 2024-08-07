@@ -2,13 +2,12 @@ import React from 'react'
 import CommonHeading from '../common/CommonHeading'
 import Icon from '../common/Icons'
 import reviewStar from '../assets/images/svg/review_star.svg'
-import profile1 from '../assets/images/svg/profile1.svg'
-import profile2 from '../assets/images/svg/profile2.svg'
-import profile3 from '../assets/images/svg/profile3.svg'
-import profile4 from '../assets/images/svg/profile4.svg'
-import profile5 from '../assets/images/svg/profile5.svg'
+
 import Slider from 'react-slick'
+import { SLIDER_DATA } from '../common/Helper'
+
 const Customers = () => {
+
   var settings1 = {
     arrows: false,
     dots: false,
@@ -25,7 +24,6 @@ const Customers = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2.5,
-          slidesToScroll: 1,
           centerPadding: "150px",
         }
       },
@@ -33,7 +31,6 @@ const Customers = () => {
         breakpoint: 1034,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           centerPadding: "100px",
         }
       },
@@ -41,7 +38,6 @@ const Customers = () => {
         breakpoint: 860,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           centerPadding: "30px",
         }
       },
@@ -49,7 +45,6 @@ const Customers = () => {
         breakpoint: 745,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           centerMode: false,
           variableWidth: false,
         }
@@ -58,16 +53,13 @@ const Customers = () => {
         breakpoint: 630,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           centerPadding: "120px",
-          
         }
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           centerMode: false,
           variableWidth: false,
           centerPadding: "0",
@@ -75,6 +67,7 @@ const Customers = () => {
       },
     ],
   };
+
   return (
     <div className='lg:pt-[140px] md:pt-24 pt-20'>
       <div className='container'>
@@ -131,124 +124,35 @@ const Customers = () => {
       </div>
       <div className='customer_slider max-w-[1440px] max-sm:max-w-[380px] mx-auto'>
         <Slider {...settings1}>
-          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
-            <div className='flex items-center gap-2'>
-              <img src={profile1} alt="#" />
-              <div>
-                <p className="font-manrope font-semibold text-base leading-6 text-black">
-                  Mark T.
-                </p>
-                <p className='font-normal font-manrope text-sm leading-[22px] text-black'>
-                  Fitness enthusiast
-                </p>
+          {SLIDER_DATA.map((customer, index) => (
+            <div key={index} className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
+              <div className='flex items-center gap-2'>
+                <img src={customer.profileImage} alt={customer.name} />
+                <div>
+                  <p className="font-manrope font-semibold text-base leading-6 text-black">
+                    {customer.name}
+                  </p>
+                  <p className='font-normal font-manrope text-sm leading-[22px] text-black'>
+                    {customer.title}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className='flex gap-1 py-4'>
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-            </div>
-            <p className="max-w-[316px] font-normal font-manrope sm:text-base text-sm sm:leading-6 leading-5 text-black">
-              "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
-            </p>
-          </div>
-          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
-            <div className='flex items-center gap-2'>
-              <img src={profile2} alt="#" />
-              <div>
-                <p className="font-manrope font-semibold text-base leading-6 text-black">
-                  Mark T.
-                </p>
-                <p className='font-normal font-manrope text-sm leading-[22px] text-black'>
-                  Fitness enthusiast
-                </p>
+              <div className='flex gap-1 py-4'>
+                <Icon iconName='SliderIcon' />
+                <Icon iconName='SliderIcon' />
+                <Icon iconName='SliderIcon' />
+                <Icon iconName='SliderIcon' />
+                <Icon iconName='SliderIcon' />
               </div>
+              <p className="max-w-[316px] font-normal font-manrope sm:text-base text-sm sm:leading-6 leading-5 text-black">
+                {customer.review}
+              </p>
             </div>
-            <div className='flex gap-1 py-4'>
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-            </div>
-            <p className="max-w-[316px] font-normal font-manrope sm:text-base text-sm sm:leading-6 leading-5 text-black">
-              "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
-            </p>
-          </div>
-          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
-            <div className='flex items-center gap-2'>
-              <img src={profile3} alt="#" />
-              <div>
-                <p className="font-manrope font-semibold text-base leading-6 text-black">
-                  Mark T.
-                </p>
-                <p className='font-normal font-manrope text-sm leading-[22px] text-black'>
-                  Fitness enthusiast
-                </p>
-              </div>
-            </div>
-            <div className='flex gap-1 py-4'>
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-            </div>
-            <p className="max-w-[316px] font-normal font-manrope sm:text-base text-sm sm:leading-6 leading-5 text-black">
-              "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
-            </p>
-          </div>
-          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
-            <div className='flex items-center gap-2'>
-              <img src={profile4} alt="#" />
-              <div>
-                <p className="font-manrope font-semibold text-base leading-6 text-black">
-                  Mark T.
-                </p>
-                <p className='font-normal font-manrope text-sm leading-[22px] text-black'>
-                  Fitness enthusiast
-                </p>
-              </div>
-            </div>
-            <div className='flex gap-1 py-4'>
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-            </div>
-            <p className="max-w-[316px] font-normal font-manrope sm:text-base text-sm sm:leading-6 leading-5 text-black">
-              "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
-            </p>
-          </div>
-          <div className='bg-white rounded-3xl sm:shadow-4xl shadow-6xl h-[281px] sm:max-w-[364px] max-w-[342px] w-full sm:h-[320px] lg:h-[340px] xl:h-[330px] 2xl:h-[281px] p-6 my-4'>
-            <div className='flex items-center gap-2'>
-              <img src={profile5} alt="#" />
-              <div>
-                <p className="font-manrope font-semibold text-base leading-6 text-black">
-                  Mark T.
-                </p>
-                <p className='font-normal font-manrope text-sm leading-[22px] text-black'>
-                  Fitness enthusiast
-                </p>
-              </div>
-            </div>
-            <div className='flex gap-1 py-4'>
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-              <Icon iconName='SliderIcon' />
-            </div>
-            <p className="max-w-[316px] font-normal font-manrope sm:text-base text-sm sm:leading-6 leading-5 text-black">
-              "As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is top-notch, and they've become an integral part of my workout routine. I can't believe how versatile they are.”
-            </p>
-          </div>
+          ))}
         </Slider>
       </div>
     </div>
   )
 }
+
 export default Customers

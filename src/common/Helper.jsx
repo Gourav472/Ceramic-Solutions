@@ -3,6 +3,11 @@ import showers from '../assets/images/webp/shower.webp'
 import floor from '../assets/images/webp/floor.webp'
 import tiling from '../assets/images/webp/tiling.webp'
 import wall from '../assets/images/webp/wall.webp'
+import profile1 from '../assets/images/svg/profile1.svg'
+import profile2 from '../assets/images/svg/profile2.svg'
+import profile3 from '../assets/images/svg/profile3.svg'
+import profile4 from '../assets/images/svg/profile4.svg'
+import profile5 from '../assets/images/svg/profile5.svg'
 import adaShower from '../assets/images/webp/ada_shower.webp'
 import fireplace from '../assets/images/webp/fireplace.webp'
 
@@ -96,4 +101,38 @@ export const LOCATION_MARK = [
     { name: "Knoxville" },
     { name: "Sevierville" },
     { name: "Maynardville" },
-]
+];
+
+
+export const SLIDER_DATA = [
+    {
+      profileImage: profile1,
+      name: 'Mark T.',
+      title: 'Fitness enthusiast',
+      review: 'As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I\'m a believer. The quality is top-notch, and they\'ve become an integral part of my workout routine. I can\'t believe how versatile they are.'
+    },
+    {
+      profileImage: profile2,
+      name: 'Mark T.',
+      title: 'Fitness enthusiast',
+      review: 'As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I\'m a believer. The quality is top-notch, and they\'ve become an integral part of my workout routine. I can\'t believe how versatile they are.'
+    },
+    {
+      profileImage: profile3,
+      name: 'Mark T.',
+      title: 'Fitness enthusiast',
+      review: 'As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I\'m a believer. The quality is top-notch, and they\'ve become an integral part of my workout routine. I can\'t believe how versatile they are.'
+    },
+    {
+      profileImage: profile4,
+      name: 'Mark T.',
+      title: 'Fitness enthusiast',
+      review: 'As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I\'m a believer. The quality is top-notch, and they\'ve become an integral part of my workout routine. I can\'t believe how versatile they are.'
+    },
+    {
+      profileImage: profile5,
+      name: 'Mark T.',
+      title: 'Fitness enthusiast',
+      review: 'As a fitness enthusiast, I was skeptical about resistance bands at first. But after trying these, I\'m a believer. The quality is top-notch, and they\'ve become an integral part of my workout routine. I can\'t believe how versatile they are.'
+    },
+  ];
